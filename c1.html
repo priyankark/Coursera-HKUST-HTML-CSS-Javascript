@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HKUST Full Stack Course-1 Assignment-1/Priyankar Kumar</title>
+    <style>
+        fieldset{
+            background: lightyellow;
+            border: 10px solid yellow;
+            margin-bottom: 10px;
+            width: 720px;
+
+        }
+        label{
+            width:180px;
+            display:inline-block;
+            text-align:right;
+            vertical-align: top;
+            font-family: "Microsoft Sans Serif";
+
+
+
+        }
+     .rad{
+         width:auto;
+
+     }
+        .chk{
+            width:auto;
+        }
+textarea{
+    width:360px;
+    height:50px;
+}
+.texts{
+    text-align: center;
+    background-color: red;
+    color:white;
+}
+.texts1{
+    text-align: center;
+    background-color:purple;
+    color:white;
+}
+        label:hover { font-size:40px }
+    </style>
+</head>
+<body>
+<h2>Assignment 1 (HKUST-HTML/CSS-COURSERA)</h2>
+<form action=" http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post">
+<fieldset>
+    <legend> <h2> Your Face </h2></legend>
+    <label for="imge">Your image:</label><input type="file" id="imge" required> <br><br>
+    <label for="preview">Image preview:</label> <img id="preview">
+</fieldset>
+<fieldset>
+    <legend><h2>Your general details</h2></legend>
+    <label for="names">Your name:</label> <input type="text" name="names" placeholder="Your Name Here" id="names" required><br><br>
+    <label>Gender:</label><input type="radio" class="rad" name="gender" value="male" required> Male <input type="radio" name="gender" value="female" required> Female <br><br>
+    <label for="age">Age:</label> <input type="number" id="age" value="18" name="age"> <br><br>
+    <label for="dob"> Date of Birth:</label><input type="date" name="dob" id="dob"> <br><br>
+    <label for="favcolor">Favourite Colour:</label> <input type="color" name="favcolor" id="favcolor"> <br> <br>
+    <label for="country"> Select Country:</label>
+    <select name="country" id="country">
+        <option value="in"> India</option>
+        <option value="jp">Japan</option>
+        <option value="ch">China</option>
+        <option value="vt">Vietnam</option>
+        <option value="vz">Venezuela</option>
+        <option value="no">Unlisted</option>
+    </select>
+</fieldset>
+    <fieldset>
+        <legend>
+           <h2>Your indicators </h2>
+        </legend>
+        <label for="height">Height:</label> <span class="texts1">Short </span> <input type="range" min="0" max="7" step="0.5" value="5" id="height"> <span class="texts">Too Tall</span> <br><br>
+        <label for="salary">Salary:</label> <span class="texts1">Broke</span> <input type="range" min="0" max="100000" step="5000" value="50000" id="salary"> <span class="texts">Too rich </span> <br>
+    </fieldset>
+
+    <fieldset>
+        <legend><h2>Contact Information </h2></legend>
+        <label for="email"> E-mail:</label> <input type="email" name="email" id="email" > <br><br>
+        <label for="phone">Mobile:</label> <input type="tel" id="phone" name="phone"> <br><br>
+        <label for="address">Address:</label> <textarea rows="5" cols="20" id="address" name="address"> </textarea> <br><br>
+        <label>How to contact:</label> <input type="checkbox" class="chk" id="means1" name="means"> Whatsapp <input type="checkbox" id="means2" name="means"> Mobile <input type="checkbox" id="means3" name="means"> e-mail <br>
+
+    </fieldset>
+
+    <br> <input type="submit">
+
+</form>
+</body>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</html>
